@@ -1,10 +1,13 @@
 package com.moringa.jobsource.Data;
 
+import android.net.Uri;
 import android.provider.BaseColumns;
 
 public class jobSourceContract {
 
     public static final String CONTENT_AUTHORITY = "com.example.moringa.jobsource";
+
+    public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
 
     private jobSourceContract(){}
 
