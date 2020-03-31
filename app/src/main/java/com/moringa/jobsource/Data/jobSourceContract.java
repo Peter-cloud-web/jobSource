@@ -18,7 +18,7 @@ public class jobSourceContract {
         public final static String COLUMN_FIRST_NAME = "firstname";
         public final static String COLUMN_LAST_NAME = "lastname";
         public final static String COLUMN_EMAIL = "email";
-        public final static String COLUMN_PASSWORD = "password"
+        public final static String COLUMN_PASSWORD = "password";
 
 
     }
