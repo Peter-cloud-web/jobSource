@@ -12,13 +12,13 @@ public class jobSourceContract {
     private jobSourceContract(){}
 
     public static final class RegisterEntry implements BaseColumns{
-        public final static String TABLE_NAME = "register";
+        public final static String TABLE_NAME = "registerserviceprovider";
 
         public final static String _ID = BaseColumns._ID;
         public final static String COLUMN_FIRST_NAME = "firstname";
         public final static String COLUMN_LAST_NAME = "lastname";
-        public final static String COLUMN_EMAIL_NAME = "email";
-        public final static String COLUMN_PASSWORD_NAME = "password";
+        public final static String COLUMN_EMAIL = "email";
+        public final static String COLUMN_PASSWORD = "password"
 
 
     }
