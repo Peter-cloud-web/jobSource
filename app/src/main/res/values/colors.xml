@@ -6,4 +6,9 @@
     <color name="white">#FFFFFF</color>
     <color name="black">#000</color>
     <color name="signupColor">#066e8a</color>
+    <color name="primaryDark">#292b3d</color>
+    <color name="grayLight">#fafafa</color>
+    <color name="startBlue">#09c6df</color>
+    <color name="endBlue">#0bcce6</color>
+    <color name="gray">#EEEE</color>
 </resources>

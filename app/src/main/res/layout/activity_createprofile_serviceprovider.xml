@@ -1,6 +1,275 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="405dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:orientation="vertical"
+                android:background="@color/endBlue">
+                <ImageView
+                    android:id="@+id/profilephoto"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/circle_shape"
+                    android:layout_gravity="center_horizontal"/>
+
+                <ImageView
+                    android:id="@+id/editprofilephoto"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/edit"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_shape"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="50dp"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/displayName"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Names"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textColorHighlight="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:id="@+id/displayEmail"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textColorHighlight="@color/white"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/phonenumber"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="10dp"
+                android:hint="Phone Number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textColorHighlight="@color/white"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/servicename"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Name of service"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textColorHighlight="@color/white"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:id="@+id/location"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="10dp"
+                android:hint="Location"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textColorHighlight="@color/white"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/work"
+                android:drawablePadding="10dp"
+                android:hint="experience"
+                android:id="@+id/experience"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textColorHighlight="@color/white"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/work"
+                android:drawablePadding="10dp"
+                android:hint="project1 name"
+                android:id="@+id/project1name"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textColorHighlight="@color/white"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:id="@+id/project1link"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/link"
+                android:drawablePadding="10dp"
+                android:hint="project1 Link"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textColorHighlight="@color/white"/>
+
+
+            <EditText
+                android:id="@+id/project1desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapeemail"
+                android:drawablePadding="10dp"
+                android:gravity="start|top"
+                android:hint="project1 description"
+                android:inputType="textMultiLine"
+                android:padding="15dp" />
+
+            <EditText
+                android:id="@+id/project2name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/work"
+                android:drawablePadding="10dp"
+                android:hint="project2 name"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textColorHighlight="@color/white"/>
+            <EditText
+                android:id="@+id/project2link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/link"
+                android:drawablePadding="10dp"
+                android:hint="project2 Link"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textColorHighlight="@color/white"/>
+
+
+            <EditText
+                android:id="@+id/project2desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:background="@drawable/shapeemail"
+                android:hint="project2 description"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/project3name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/work"
+                android:drawablePadding="10dp"
+                android:hint="project3 name"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textColorHighlight="@color/white"/>
+            <EditText
+                android:id="@+id/project3link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/link"
+                android:drawablePadding="10dp"
+                android:hint="project3 Link"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textColorHighlight="@color/white"/>
+
+
+            <EditText
+
+                android:id="@+id/project3desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:background="@drawable/shapeemail"
+                android:hint="project3 description"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"/>
+            <Button
+                android:id="@+id/savedetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Details"
+                android:shadowColor="@android:color/transparent"
+                android:padding="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shapesignup"
+                android:textColor="@color/black"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

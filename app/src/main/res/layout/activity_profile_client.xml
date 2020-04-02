@@ -1,6 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="255dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical"
+                android:background="@color/endBlue">
+             >
+                <TextView
+                    android:id="@+id/Names"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Your full names"
+                    android:layout_marginTop="100dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="30sp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/fName"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="First Name"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textColorHighlight="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/lName"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Last Name"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textColorHighlight="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/mobilenumber"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="10dp"
+                android:hint="Phone Number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textColorHighlight="@color/white"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:id="@+id/email"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textColorHighlight="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
