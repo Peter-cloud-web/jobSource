@@ -5,32 +5,39 @@
 
         <item
             android:id="@+id/dashboard"
+            android:fontFamily="@font/chargersport"
             android:icon="@drawable/dashboard"
             android:title="Dashboard"/>
 
         <item
             android:id="@+id/profile"
+            android:fontFamily="@font/chargersport"
             android:icon="@drawable/ic_person_black_24dp"
             android:title="View profile"/>
 
         <item
             android:id="@+id/serviceproviders"
+            android:fontFamily="@font/chargersport"
             android:icon="@drawable/work"
             android:title="Currently Hired"/>
         <item
             android:id="@+id/bills"
             android:icon="@drawable/money"
+            android:fontFamily="@font/chargersport"
             android:title="Pending Bills"/>
         <item
             android:id="@+id/settings"
+            android:fontFamily="@font/chargersport"
             android:icon="@drawable/settings"
             android:title="Settings"/>
         <item
             android:id="@+id/logout"
+            android:fontFamily="@font/chargersport"
             android:icon="@drawable/logout"
             android:title="Logout"/>
         <item
             android:id="@+id/help"
+            android:fontFamily="@font/chargersport"
             android:icon="@drawable/help"
             android:title="Help"/>
 

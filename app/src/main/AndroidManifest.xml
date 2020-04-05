@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.moringa.jobsource">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,10 +15,31 @@
         <activity android:name=".Activity.MainActivity">
 
         </activity>
-        <activity android:name=".Activity.EditorActivity">
+        <activity android:name=".Activity.Login">
 
         </activity>
-        <activity android:name=".Activity.CatalogueActivity">
+        <activity android:name=".Activity.Register">
+
+        </activity>
+        <activity android:name=".Activity.CreateProfile_Worker">
+
+        </activity>
+        <activity android:name=".Activity.CreateProfile_Client">
+
+        </activity>
+        <activity android:name=".Activity.ForgotPassword">
+
+        </activity>
+        <activity android:name=".Activity.Profile_Client">
+
+        </activity>
+        <activity android:name=".Activity.Profile_Worker">
+
+        </activity>
+        <activity android:name=".Activity.SplashScreen">
+            <meta-data
+                android:name="firebase_crashlytics_collection_enabled"
+                android:value="false" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
